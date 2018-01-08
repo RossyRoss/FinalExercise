@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:text="Student Profiler"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/userRegId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="43dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/firstNameRegId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/userRegId"
+            android:layout_alignStart="@+id/userRegId"
+            android:layout_below="@+id/userRegId"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="Firstname"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/lastNameRegId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/firstNameRegId"
+            android:layout_alignStart="@+id/firstNameRegId"
+            android:layout_below="@+id/firstNameRegId"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Lastname"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/passRegId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lastNameRegId"
+            android:layout_alignStart="@+id/lastNameRegId"
+            android:layout_below="@+id/lastNameRegId"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/confPassRegId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/passRegId"
+            android:layout_alignStart="@+id/passRegId"
+            android:layout_below="@+id/passRegId"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/clearBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="22dp"
+            android:text="Clear"
+            android:layout_below="@+id/confPassRegId"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/regBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="47dp"
+            android:layout_marginRight="47dp"
+            android:text="Register"
+            android:layout_alignBaseline="@+id/clearBtn"
+            android:layout_alignBottom="@+id/clearBtn"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</LinearLayout>

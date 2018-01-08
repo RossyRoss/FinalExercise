@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:text="Student Profiler"
+            android:textSize="30sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/IdNumId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:hint="ID Number"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/textView2"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/firstNameRegId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/IdNumId"
+            android:layout_alignStart="@+id/IdNumId"
+            android:layout_below="@+id/IdNumId"
+            android:layout_marginTop="17dp"
+            android:enabled="false"
+            android:ems="10"
+            android:hint="Firstname"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/lastNameRegId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/firstNameRegId"
+            android:layout_alignStart="@+id/firstNameRegId"
+            android:layout_below="@+id/firstNameRegId"
+            android:layout_marginTop="15dp"
+            android:enabled="false"
+            android:ems="10"
+            android:hint="Lastname"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/MidInitId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lastNameRegId"
+            android:layout_alignStart="@+id/lastNameRegId"
+            android:layout_below="@+id/lastNameRegId"
+            android:layout_marginTop="19dp"
+            android:enabled="false"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Middle Initial" />
+
+        <EditText
+            android:id="@+id/courseId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/MidInitId"
+            android:layout_alignStart="@+id/MidInitId"
+            android:layout_below="@+id/MidInitId"
+            android:layout_marginTop="16dp"
+            android:enabled="false"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Course" />
+
+        <EditText
+            android:id="@+id/yearId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/courseId"
+            android:layout_alignStart="@+id/courseId"
+            android:layout_below="@+id/courseId"
+            android:layout_marginTop="16dp"
+            android:enabled="false"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Year" />
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:text="Search"
+            android:layout_below="@+id/yearId"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/clearBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/updateBtn"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:text="Clear" />
+
+    </RelativeLayout>
+</LinearLayout>

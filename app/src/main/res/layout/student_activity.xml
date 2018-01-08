@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Registration Form"
+            android:textSize="30sp"
+            android:layout_marginTop="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="236dp"
+            android:layout_height="50dp"
+            android:text="Add"
+            android:layout_marginBottom="19dp"
+            android:layout_above="@+id/searchBtn"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="236dp"
+            android:layout_height="50dp"
+            android:text="Search"
+            android:layout_above="@+id/updateBtn"
+            android:layout_alignLeft="@+id/addBtn"
+            android:layout_alignStart="@+id/addBtn"
+            android:layout_marginBottom="15dp" />
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="236dp"
+            android:layout_height="50dp"
+            android:text="Update"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/searchBtn"
+            android:layout_alignStart="@+id/searchBtn" />
+
+        <Button
+            android:id="@+id/viewBtn"
+            android:layout_width="236dp"
+            android:layout_height="50dp"
+            android:text="View"
+            android:layout_below="@+id/updateBtn"
+            android:layout_alignLeft="@+id/updateBtn"
+            android:layout_alignStart="@+id/updateBtn"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="236dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/exitBtn"
+            android:layout_alignLeft="@+id/exitBtn"
+            android:layout_alignStart="@+id/exitBtn"
+            android:layout_marginBottom="19dp"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/exitBtn"
+            android:layout_width="236dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/viewBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/viewBtn"
+            android:layout_marginBottom="23dp"
+            android:text="Logout" />
+    </RelativeLayout>
+</LinearLayout>
